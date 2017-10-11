@@ -1,0 +1,41 @@
+
+:root {
+  --base: #0066ff;
+  --spacing: 10px;
+  --blur: 5px;
+  --font: 'helvetca neue';
+  --align: 'left';
+  --text-color: #fff;
+  --bg-color: #193549;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: var(--align);
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font), sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.hl {
+  color: var(--base);
+}
+
+img {
+  filter: blur(var(--blur));
+  padding: var(--spacing);
+  background: var(--base);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width:100px;
+}
