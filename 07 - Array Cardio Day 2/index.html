@@ -24,20 +24,23 @@
       { text: 'Nice Nice Nice!', id: 542328 }
     ];
 
+    console.table(people)
   // A) Some and Every Checks
     // 1- Array.prototype.some() // is at least one person 19 or older?
     const isOlderThan19 = people.some((person) => ((new Date().getFullYear() - person.year) > 19 ))
-    console.log(isOlderThan19)
+    console.log(`There's older than 19? ${isOlderThan19}\n\n`)
     
     //2- Array.prototype.every() // is everyone 19 or older?
 
     const isEveryBodyOlder = people.every((person) =>  ((new Date().getFullYear() - person.year) > 19 ))
-    console.log(isEveryBodyOlder)
+    console.log(`they all are older than 19? ${isEveryBodyOlder}\n\n`)
     
   //b) Array.prototype.find() // Find is like filter, but instead returns just the one you are looking for
     //1- find the comment with the ID of 823423
     const found = comments.find( (comment) => (comment.id == 823423))
+    console.log('the selected comment')
     console.log(found)
+    console.log("\n\n")
 
   // c) Array.prototype.findIndex()
     // 1- Find the comment with this ID // delete the comment with the ID of 823423
