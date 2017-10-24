@@ -10,3 +10,4 @@
 - Day 4 Array Cardio Day 1 --uff
 - Day 5 Flex Gallery Panel  -- more css than js
 - Day 6 Type Ahead -- I Used MVC for this one
+- Day 7 Array Cardio Day 2  -- easy one
