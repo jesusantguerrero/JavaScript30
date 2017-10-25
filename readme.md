@@ -11,3 +11,4 @@
 - Day 5 Flex Gallery Panel  -- more css than js
 - Day 6 Type Ahead -- I Used MVC for this one
 - Day 7 Array Cardio Day 2  -- easy one
+- Day 8 Fun with Canvas  -- the canvas is awesome!

@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: nonse;
+  user-select: none;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  color: #555
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: fixed;
+  bottom: 5px;
+  right: 5%;
+  height: 32px;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+input,
+select,
+button,
+label {
+  margin: 0 5px;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+}
