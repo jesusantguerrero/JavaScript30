@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+    // Regular
+    console.log('the normal logging')
+    // Interpolated
+    console.log("didn't know this %s one", ':poop:')
+    // Styled
+    console.log('%c styling the console, really?', 'font-size: 22px; color: crimson;')
+    console.log('%c  ', 'margin-right: 10px;width: 100px; height: 50px; background: crimson; border-radius: 50%')
+    // warning!
+    console.warn('this is a warning')
+    // Error :|
+    console.error('this is an error')
+    // Info
+    console.info('this is an information')
+    // Testing
+    console.log('')
+    // clearing
+    // Viewing DOM Elements
+    console.dir(document.querySelector('p'))
+    // Grouping together
+    dogs.forEach((dog) => {
+      console.group(dog.name)
+      console.log(dog.name)
+      console.log(`${dog.age} years`)
+      console.log(`${dog.age* 7} dog years`)
+      console.groupEnd(dog.name)
+
+    })
+    // counting
+    console.log('jesus')
+    console.log('jesus')
+    console.log('antonio')
+    // timing
+
+    console.time('github request')
+    fetch('https://api.github.com/users/jesusantguerrero').then((res) => res.json()).then((res) =>{
+      console.timeEnd('github request')
+      console.log('this will be usefull for later')
+      console.log(res)
+    })
+    console.table(dogs)
+  </script>
+</body>
+</html>

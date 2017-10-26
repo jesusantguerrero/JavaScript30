@@ -12,3 +12,4 @@
 - Day 6 Type Ahead -- I Used MVC for this one
 - Day 7 Array Cardio Day 2  -- easy one
 - Day 8 Fun with Canvas  -- the canvas is awesome!
+- Day 9 Dev Tools domination  -- 
