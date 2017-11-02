@@ -102,12 +102,11 @@
   const $checks = document.querySelectorAll('[type=checkbox]');
   const checks = Array.from($checks)
   let lastIndex = null
-  checks.forEach((el, i) => el.addEventListener('change', (e) =>  changeHandler(e,i)))
+  checks.forEach((el, i) => el.addEventListener('click', (e) =>  changeHandler(e,i)))
   
   function changeHandler(e, i) {
-    if (e.target.checked) {
+    if (e.target.checked && e.shiftKey) {
       if (lastIndex !== null) {
-        console.log(e)
         const order = [lastIndex, i].sort((a,b) => (a > b) ? 1 : -1) 
         checks.forEach((val, i) => {
           if (i >= order[0] && i <= order[1]) {
