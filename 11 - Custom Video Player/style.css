@@ -25,6 +25,7 @@ body {
   position: relative;
   font-size: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 
 /* This css is only applied when fullscreen is active. */
@@ -79,7 +80,7 @@ body {
 }
 
 .player:hover .progress {
-  height:15px;
+  height:10px;
 }
 
 .player__controls > * {
@@ -101,7 +102,7 @@ body {
   width:50%;
   background:#ffc600;
   flex:0;
-  flex-basis:50%;
+  flex-basis:0%;
 }
 
 /* unholy css to style input type="range" */

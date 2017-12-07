@@ -18,7 +18,6 @@ class drumBox  {
       key.classList.remove('playing')
     },200)
   }
-  
 }
 
 window.$ = (selector) => document.querySelectorAll(selector)[0]; // a shorthand
